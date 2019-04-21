@@ -24,7 +24,8 @@ class Startscherm(QMainWindow):
         self.cbo_KiesBestand.currentIndexChanged.connect(self.cbo_kiesbestand_is_gewijzigd)
         self.cbo_Country.currentIndexChanged.connect(self.cbo_Country_is_gewijzigd)
         #uitklaplijsten vullen met info...
-
+        # even iets wijzigen voor nieuwe push
+        
     def spreek(self):
         # functie als test of iets werkt
         print('ik spreek')
