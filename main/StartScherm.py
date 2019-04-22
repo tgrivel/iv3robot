@@ -5,6 +5,7 @@ from pathlib import Path
 import sys
 import os
 import json
+import requests
 
 data_lijst_met_urls = []
 
@@ -31,8 +32,15 @@ class Startscherm(QMainWindow):
         #Knoppen instellen
         self.Btn_GetData.clicked.connect(self.VulText)
         self.Btn_Quit.clicked.connect(self.close)
+        self.btn_download.clicked.connect(self.download)
         #uitklaplijsten vullen met info...
         # even iets wijzigen voor nieuwe push
+
+    def download(self):
+        # url = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
+        url = "https://africaopendata.org/dataset/7233c912-ac75-46b4-a3c2-9ba0feeffaa5/resource/e62e3d4f-2937-4e45-bcad-a8c10148cd2e/download/2011-budget.xlsx"
+        r = requests.get(url, allow_redirects=True)
+        open('C:\\Theo\\Python\\iv3Robot\\downloadmap\\test.xlsx', 'wb').write(r.content)
 
     def VulText(self):
         pad_lijst_met_urls = geef_instelling('paden','lijst_met_urls')
