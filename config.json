@@ -1,0 +1,9 @@
+{
+"paden": [
+{"lijst_met_urls": "C:\\Theo\\Python\\iv3Robot\\BronBestand\\"},
+{"doelmap": "C:\\Theo\\Python\\iv3Robot\\downloadmap"}
+],
+"bestandsnamen": [
+{"lijst_met_urls": "url_lijst.json"}
+]
+}

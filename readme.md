@@ -9,3 +9,7 @@ zie hiervoor ook https://build-system.fman.io/pyqt5-tutorial
 om pycharm de diverse libs te laten herkennen, klik met rechts op de map
 waar de venv in staat en kies voor Mark Directory As Source root
 daarna Pycharm opnieuw starten en hij kan daadwerkeiljk de libs vinden
+
+voor de test zijn dit de bestandsnamen, de urls komen uit de json lijst
+all_hour.geojson
+all_day.geojson
